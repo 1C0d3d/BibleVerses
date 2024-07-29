@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ header {
     color: #fff;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #77aaff 3px solid;
+    border-bottom: 3px solid #77aaff;
 }
 
 header a {
@@ -35,7 +35,7 @@ header ul {
 header li {
     float: left;
     display: inline;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
 }
 
 header #branding {
