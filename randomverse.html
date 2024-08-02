@@ -20,11 +20,14 @@
     <script>
         async function fetchVerse() {
             try {
+                console.log('Fetching verse...');
                 const response = await fetch('https://bible-api.com/?random=verse');
+                console.log('Response received:', response);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 const data = await response.json();
+                console.log('Data received:', data);
                 document.getElementById('verse').innerText = `"${data.text}"`;
                 document.getElementById('reference').innerText = `- ${data.reference}`;
             } catch (error) {
