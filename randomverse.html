@@ -1,4 +1,4 @@
-s<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@ s<!DOCTYPE html>
         async function fetchVerse() {
             try {
                 console.log('Fetching verse...');
-                const response = await fetch('http://labs.bible.org/api_web_service');
+                const response = await fetch('https://bible-api.com/?random=verse');
                 console.log('Response received:', response);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
